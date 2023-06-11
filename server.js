@@ -30,8 +30,8 @@ app.post("/", (req, res)=>{
         port: 587, // Puerto SMTP
         secure: false, // Habilitar el uso de STARTTLS
         auth: {
-            user: 'soporte.avon@hotmail.com', // Tu dirección de correo electrónico de Hotmail
-            pass: '#Jherco098123', // Tu contraseña de Hotmail
+            user: 'soporte@hotmail.com', // mail
+            pass: 'Example', // pass
         }
 
     })*/
