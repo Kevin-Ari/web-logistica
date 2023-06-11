@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+:root {
+    --color-header--: #20CD8D;
+    --color-header-2-:#20CD8D;
+    --color-nav-txt: #ffff;
+    --color-hover: #231F1F;
+    --servicios: #182527;
+    --task-fondo--: #e4e4e4a9;
+
+
+    --font-txt--: 'Tilt Neon', cursive;
+
+    --font-gral-1--: 'Hubballi', cursive;
+    --font-gral-2--: 'Tilt Neon', cursive;
+}
+body {
+    margin: 0;
+    font-family: var(--font-gral-1--), var(--font-gral-2--);
+}/*----------------------------------HEADER--------------------------------*/
+/*nav*/
+.header {
+    background-color: var(--color-header--);
+    padding: 0 3% 0 3%;
+}
+.header-nav {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.lista-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.link-nav {
+    text-decoration: none;
+    color: var(--color-nav-txt);
+    height: 100%;
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+
+}
+.link-nav:hover {
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--color-hover);
+}
+/*---LOGO---*/
+.logo {
+    color: var(--color-nav-txt);
+
+}
+.logo-txt {
+    border-left:7px solid black;
+    padding-left: 10px;
+}
+/*baner*/
+.banner {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: self-end;
+    grid-column-gap: 100px;
+}
+.header-img {
+    width: 100%;
+}
+.iconos {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.icon-box{
+    border-radius: 10px;
+    width: 50px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(49, 49, 49, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(131, 131, 131, 0.1) 20px 20px;
+    background-color: var(--color-nav-txt);
+    animation: movimiento 2.5s linear infinite;
+}
+.ico-nav {
+    font-size: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.lugar1 {
+    margin-left: 30%;
+}
+.lugar2 {
+    margin-left: 50%;
+}
+.lugar3 {
+    margin-left: 70%;
+}
+.block-txt {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    font-size: 50px;
+}
+.banner-txt {
+    margin-bottom: 15%;
+}
+.btn-explorer {
+    border-radius: 25px;
+    border: transparent;
+    font-size: 30px;
+    background-color: var(--servicios);
+    color: var(--color-header-2-);
+    cursor: pointer;
+    padding: 10px 25px 10px 25px;
+}
+/*--------------------MAIN-------------*/
+/*-------------------SERVICIOS-------------*/
+.servicios {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto auto;
+    background-color: #fff;
+    padding: 5% 10%;
+    background-image: url(../img/Clouds.png);
+    background-size: cover;
+}
+.tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--task-fondo--);
+    border-radius: 0 0 20px 20px;
+}
+.subtitle-1 {
+    color: var(--color-header--);
+    text-align: center;
+    background-color: var(--task-fondo--);
+    margin: 0;
+    padding: 20px 0 20px 0;
+    border-radius: 20px 20px 0 0;
+}
+.subtitle-2 {
+    color: var(--color-header--);
+    border-left: 3px solid var(--color-header--);
+    padding-left: 10px;
+}
+.task-txt {
+    color: black;
+    padding-left: 10px;
+}
+#ico-srv {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+
+}
+.task-1, .task-2, .task-3{
+    padding: 40px 30px 30px 30px;
+}
+.btn-task {
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: var(--color-header-2-);
+    color: var(--color-hover);
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+/*-------------------------------------MAIN------------------------------*/
+/*----------------FOOTER----------*/
+.footer {
+    background-color: var(--servicios);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 0 3% 0 3%;
+}
+.box-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+}
+.footer-subtitle {
+    color: var(--color-header--);
+    border-left: 3px solid var(--color-header--);
+    padding-left: 10px;
+}
+.formulario {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-header-2-);
+    border-radius: 15px;
+}
+.soporte-btn {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10%;
+    color: var(--color-nav-txt);
+    justify-items: start;
+    text-align: center;
+}
+.footer-inf {
+    border-top: 1px solid var(--color-header-2-);
+    margin-top: 30px;
+    color: var(--task-fondo--);
+}
+.subtitle-3 {
+    text-align: center;
+}
+.btn-phone, .btn-mail {
+    background-color: var(--color-header-2-);
+    width: 30px;
+    height: 30px;
+    padding: 40px;
+    font-size: auto;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: transparent;
+}
+/*--------------FORMULARIO------------------*/
+.form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+/*-----------------------------------ANIMACIONES---------------------------*/
+@keyframes movimiento {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes typing {
+    from { width: 0}
+}
+@keyframes blink {
+    50% { border-color: transparent}
+}
